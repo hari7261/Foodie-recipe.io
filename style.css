@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #26281f;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+
+.bsb-hero-1 {
+    position: relative;
+    background-image: url('./image/hero\ bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: .1rem;
+    padding: 5rem 0; /* Adjust padding as needed */
+}
+
+.hero-bg {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.bsb-hero-1 .container {
+    position: relative;
+    z-index: 2;
+}
+
+.bsb-hero-1 .btn-light {
+    background-color: #ff6347; /* Tomato color */
+    color: #fff;
+    border: none;
+}
+
+.bsb-hero-1 .btn-outline-light {
+    border-color: #ff6347;
+    color: #ff6347;
+}
+
+.bsb-hero-1 .btn-light:hover,
+.bsb-hero-1 .btn-outline-light:hover {
+    background-color: #ff4500; /* Darker tomato color */
+    color: #fff;
+}
+
+/* Optional: Add food-themed icons */
+.bsb-hero-1:before {
+    content: '\f5b2'; /* Font Awesome utensil icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+/* Custom Carousel Styles */
+.carousel-item img {
+    object-fit: cover;
+    padding-top: 2rem;
+    height: 500px; /* Adjust height as needed */
+    filter: brightness(70%); /* Darken image to improve caption visibility */
+}
+
+.carousel-caption {
+    bottom: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Increase font size for better visibility */
+    color: #fff;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    color: #ddd;
+}
+
+/* Navigation Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for navigation icons */
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust width for control buttons */
+}
+.featured-recipes{
+    color: white;
+    background: #06a821;
+}
+
+.featured-recipes .card {
+    border: none;
+}
+
+.featured-recipes .card-img-top {
+    height: 100px;
+    object-fit: cover;
+}
+
+.recipe-categories .category-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+}
+
+.recipe-categories .category-card i {
+    color: #007bff;
+}
+
+/* Recipe Search Section Styles */
+.recipe-search .input-group {
+    margin-bottom: 1.5rem;
+}
+
+.recipe-search .card-img-top {
+    height: 200px; /* Maintain a fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border for separation */
+}
+
+.recipe-search .card-body {
+    text-align: center; /* Center-align text */
+}
+
+.recipe-search .btn-primary {
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-search .btn-primary i {
+    margin-left: 0.5rem;
+}
+
+/* Recipe Card Styles */
+.recipe-search .recipe-card {
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    overflow: hidden; /* Ensure no overflow */
+    background-color: #fff; /* Set background color for card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-search .recipe-card:hover {
+    transform: scale(1.02); /* Slightly enlarge card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .recipe-search .card-img-top {
+        height: 150px; /* Reduce image height on smaller screens */
+    }
+}
+
+
+
+
+
+.user-reviews .review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+}
+
+.user-reviews .rating i {
+    color: #ffb400;
+}
+/* Latest Recipes Styles */
+.latest-recipes .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.latest-recipes .card-body {
+    text-align: center;
+}
+
+.latest-recipes .btn-primary {
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-recipes .btn-primary i {
+    margin-left: 0.5rem;
+}
+
+/* Cooking Tips and Articles Styles */
+.cooking-tips .tip-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cooking-tips .btn-secondary {
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cooking-tips .btn-secondary i {
+    margin-left: 0.5rem;
+}
+
+/* Chef Spotlight Section Styles */
+.chef-spotlight {
+    background-color: #001f3f; /* Dark blue background */
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Chef Spotlight Section Styles */
+.chef-spotlight {
+    background-color: #001f3f; /* Dark blue background */
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-spotlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/chefbg.png'); /* Add a background image with food icons */
+    background-size: cover;
+    opacity: 0.5; /* Make it subtle */
+    z-index: 1;
+}
+
+.chef-spotlight .container {
+    position: relative;
+    z-index: 2;
+}
+
+.chef-spotlight .carousel-item {
+    padding: 0 15px;
+}
+
+.chef-spotlight .chef-card {
+    background: rgba(255, 255, 255, 0.2); /* Slightly translucent background */
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-spotlight .chef-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.chef-spotlight .chef-card img {
+    max-width: 120px; /* Set max-width for medium size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.chef-spotlight .chef-card:hover img {
+    transform: scale(1.1); /* Slightly enlarge image on card hover */
+}
+
+.chef-spotlight .btn-light {
+    border-radius: .25rem;
+    color: #001f3f;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chef-spotlight .btn-light:hover {
+    color: #fff;
+    background-color: #001f3f;
+}
+
+
+
+
+
+.newsletter-signup .form-control {
+    border-radius: .25rem;
+}
+
+.newsletter-signup .btn-primary {
+    border-radius: .25rem;
+}
+
+
+.social-media .btn {
+    border-radius: .25rem;
+}
+
+.social-media .btn i {
+    font-size: 1.5rem;
+}
+
+
+.contact-us .form-control {
+    border-radius: .25rem;
+}
+
+.contact-us .btn-primary {
+    border-radius: .25rem;
+}
+
+
+.faqs .accordion-button {
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+}
+
+.faqs .accordion-button:not(.collapsed) {
+    color: #007bff;
+    background-color: #e9ecef;
+}
+
+.faqs .accordion-body {
+    background-color: #fff;
+}
+
+
+.footer {
+    background-color: #343a40;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+
+
+
